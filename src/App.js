@@ -11,7 +11,7 @@ function App() {
       {people.map((p) => (
         <div className="card">
           <h2>{p.nome}</h2>
-          <p>Idade: {p.idade}</p>
+          <p>Idadee: {p.idade}</p>
           <p>Peso: {p.peso}</p>
           <p>Altura: {p.altura}</p>
           <p>IMC = {(p.peso / (p.altura * p.altura)).toFixed(2)} {((p.peso/Math.pow(p.altura,2))>30)&&('⚠️')}</p>
