@@ -7,11 +7,12 @@ import Footer from "./Footer/Footer";
 import '../App.css'
 
 function App() {
+  const myLinks = ["Link 1", "Link 2", "Link 3"]
 
   return (
     <div>
-     <Header />
-     <NavLink />
+     <Header titlte="Titulo"/>
+     <NavLink links={myLinks} />
      <Content />
      <Footer/>
     </div>

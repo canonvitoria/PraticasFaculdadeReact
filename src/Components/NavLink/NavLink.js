@@ -1,16 +1,12 @@
-function NavLink() {
+function NavLink(props) {
     return (
         <nav>
             <ul>
-                <li>
-                    <a href="#">Link 1</a>
-                </li>
-                <li>
-                    <a href="#">Link 2</a>
-                </li>
-                <li>
-                    <a href="#">Link 3</a>
-                </li>
+                {props.links.map(link => 
+                    <li>
+                        <a href="#">{link}</a>
+                    </li>
+                )}
             </ul>
         </nav>
     )
